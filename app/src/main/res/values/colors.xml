@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#304FFE</color>
+    <color name="colorPrimaryDark">#1A237E</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPopupBackground">@color/colorPrimaryDark</color>
+    <color name="colorPopupText">#FFF</color>
+
+    <color name="colorLogVerbose">#C3C3C3</color>
+    <color name="colorLogDebug">#00A0B2</color>
+    <color name="colorLogError">#F50057</color>
+    <color name="colorLogFatal">#C51162</color>
+    <color name="colorLogWarn">#FFEA00</color>
+    <color name="colorLogInfo">#1DE9B6</color>
+    <color name="colorLogDefault">#000000</color>
+</resources>

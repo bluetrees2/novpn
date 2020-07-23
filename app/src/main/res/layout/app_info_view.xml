@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="com.github.bluetrees2.novpn.AppInfoModel" />
+        <variable name="model" type="AppInfoModel" />
+        <variable name="clickListener" type="AppInfoModel.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="@dimen/app_info_view_width"
+        android:layout_height="@dimen/app_info_view_height"
+        android:layout_marginTop="@dimen/app_info_view_marginTop"
+        android:layout_marginBottom="@dimen/app_info_view_marginBottom"
+        android:padding="@dimen/app_info_view_padding"
+        android:orientation="vertical"
+        android:background="@drawable/app_info_view_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{() -> clickListener.onClick(model)}">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_icon_description"
+            android:scaleType="fitXY"
+            app:imageDrawable="@{model.icon}"
+            app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+        <TextView
+            android:id="@+id/textViewUid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_uid_description"
+            android:ellipsize="start"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:text='@{"uid: " + String.valueOf(model.uid)}'
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_label_description"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:scrollHorizontally="true"
+            android:text="@{model.label}"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>

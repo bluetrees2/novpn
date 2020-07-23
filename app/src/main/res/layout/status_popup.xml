@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/status_popup_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:minHeight="@dimen/status_popup_minHeight"
+    android:paddingHorizontal="@dimen/status_popup_paddingHorizontal"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="48dp"
+        android:layout_gravity="end"
+        android:focusable="false"
+        android:src="@drawable/tooltip_arrow_up"
+        android:tint="@color/colorPopupBackground"
+        android:contentDescription="@string/tooltip_arrow" />
+
+    <LinearLayout
+        android:id="@+id/popupContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/popup_background"
+        android:backgroundTint="@color/colorPopupBackground">
+
+        <TextView
+            android:id="@+id/popupText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="@string/action_error"
+            android:textColor="@color/colorPopupText" />
+
+        <Button
+            android:id="@+id/popupButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="12sp"
+            android:text="@string/retry" />
+
+    </LinearLayout>
+</LinearLayout>

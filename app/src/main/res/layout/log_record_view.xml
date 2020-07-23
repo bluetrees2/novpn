@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/log_record_minHeight"
+    android:background="@drawable/log_record_background"
+    android:paddingHorizontal="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="10dp"
+    android:layout_marginVertical="@dimen/log_record_marginVertical"
+    android:textSize="15sp"
+    android:lineSpacingMultiplier="1.34"
+    android:fontFamily="monospace"
+    android:focusable="true"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:ellipsize="end"
+    android:maxLines="2"
+    android:textIsSelectable="false">
+
+</TextView>

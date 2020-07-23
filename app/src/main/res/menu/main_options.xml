@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_status"
+        android:title="@string/action_success"
+        android:icon="@drawable/ic_success"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_select_all"
+        android:title="@string/action_select_all"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clear_selection"
+        android:title="@string/action_clear_selection"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_copy"
+        android:title="@string/action_copy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clear_log"
+        android:title="@string/action_clear_log"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/action_about"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="never" />
+</menu>

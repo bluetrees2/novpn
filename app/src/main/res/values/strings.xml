@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">NoVPN</string>
+    <string name="menu_main">Home</string>
+    <string name="menu_log">Logcat</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_warning">Warning</string>
+    <string name="action_error">Error</string>
+    <string name="action_pending">Pending</string>
+    <string name="action_success">Success</string>
+    <string name="action_status">Status</string>
+    <string name="action_select_all">Select All</string>
+    <string name="action_clear_selection">Clear Selection</string>
+    <string name="action_copy">Copy to clipboard</string>
+    <string name="action_clear_log">Clear</string>
+    <string name="action_about">About</string>
+    <string name="applications_list">Applications List</string>
+    <string name="app_icon_description">Application Icon</string>
+    <string name="app_label_description">Application Name</string>
+    <string name="app_uid_description">Application UID</string>
+    <string name="select_an_app">Select An App</string>
+    <string name="retry">Retry</string>
+    <string name="root_error">Failed to acquire root access.</string>
+    <string name="timeout_error">Operation timeout exceeded.</string>
+    <string name="iptables_error">Failed to apply &lt;i&gt;iptables&lt;/i&gt; rules.</string>
+    <string name="applying_iptables_rules">Applying iptables rules…</string>
+    <string name="line_separator">
+        &lt;small&gt;
+        &lt;small&gt;
+        &lt;small&gt;
+        &lt;small&gt;
+        &lt;br/&gt;
+        &lt;br/&gt;
+        &lt;/small&gt;
+        &lt;/small&gt;
+        &lt;/small&gt;
+        &lt;/small&gt;
+    </string>
+    <string name="check_iptables_installation">
+        Make sure you have &lt;i&gt;iptables&lt;/i&gt; installed in your system binary path and retry.
+    </string>
+    <string name="see_log">See the &lt;a href="log"&gt;log&lt;/a&gt; for troubleshooting information.</string>
+    <string name="ip6tables_error">Failed to apply &lt;i&gt;ip6tables&lt;/i&gt; rules.</string>
+    <string name="ipv6_rejected">
+        IPv6 network traffic for the selected apps will be rejected in order to prevent it from going through the VPN.
+    </string>
+    <string name="ipv6_rejected_brief">IPv6 is rejected.</string>
+    <string name="ipv6_leaking">
+        IPv6 network traffic for the selected apps will be going through the VPN.
+    </string>
+    <string name="ipv6_leaking_brief">IPv6 is leaking to the VPN.</string>
+    <string name="ipv6_unknown_brief">IPv6 could be leaking to the VPN.</string>
+    <string name="iptables_success">&lt;i&gt;iptables&lt;/i&gt; rules applied successfully.</string>
+    <string name="ip6tables_success">&lt;i&gt;ip6tables&lt;/i&gt; rules applied successfully.</string>
+    <string name="unknown_error">An unknown error has occurred.</string>
+    <string name="message_success">Changes applied successfully.</string>
+    <plurals name="n_apps_bypassing_vpn">
+        <item quantity="one">%d app is bypassing the VPN.</item>
+        <item quantity="other">%d apps are bypassing the VPN.</item>
+    </plurals>
+    <string name="message_select_an_app">Please select an app.</string>
+    <string name="message_pending">Changes are being applied…</string>
+    <string name="message_log_read_error">Error while reading the log.</string>
+    <string name="log_pending">Applying rules…</string>
+    <string name="log_success">Rules applied successfully.</string>
+    <string name="log_root_error">Root access error.</string>
+    <string name="log_timeout_error">Command exceeded the timeout limit.</string>
+    <string name="log_iptables_error">iptables ended with non zero return code.</string>
+    <string name="log_ip6tables_error">ip6tables ended with non zero return code.</string>
+    <string name="log_ip6tables_reject">IPv6 traffic is rejected.</string>
+    <string name="log_ip6tables_leak">IPv6 traffic is leaking to the VPN.</string>
+    <string name="log_unknown_error">unknown error.</string>
+    <plurals name="log_apps_bypassing_vpn">
+        <item quantity="one">%d app is bypassing the VPN.</item>
+        <item quantity="other">%d apps are bypassing the VPN.</item>
+    </plurals>
+    <string name="tooltip_arrow">Tooltip Arrow</string>
+    <string name="app_about">Disable VPN for selected apps.
+        &lt;br/&gt;
+        &lt;br/&gt;
+        This app declares &lt;i&gt;iptables&lt;/i&gt; rules (which requires root access) that make selected apps bypass the VPN.
+    </string>
+    <string name="boot_start">Service started</string>
+    <string name="notification_channel_id">@string/app_name</string>
+    <string name="notification_channel_name">@string/app_name</string>
+</resources>

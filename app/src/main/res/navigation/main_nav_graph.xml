@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navHome">
+
+    <StatefulFragment
+        android:id="@+id/navHome"
+        android:name="com.github.bluetrees2.novpn.MainFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/main_fragment" />
+
+    <StatefulFragment
+        android:id="@+id/navLog"
+        android:name="com.github.bluetrees2.novpn.LogFragment"
+        android:label="@string/menu_log"
+        tools:layout="@layout/log_fragment" />
+</navigation>

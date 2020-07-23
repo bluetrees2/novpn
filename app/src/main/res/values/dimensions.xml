@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_info_view_width">90dp</dimen>
+    <dimen name="app_info_view_height">128dp</dimen>
+    <dimen name="app_info_view_padding">4dp</dimen>
+    <dimen name="app_info_view_marginTop">4dp</dimen>
+    <dimen name="app_info_view_marginBottom">0dp</dimen>
+    <dimen name="status_popup_width">230dp</dimen>
+    <dimen name="status_popup_minHeight">30dp</dimen>
+    <dimen name="status_popup_paddingHorizontal">10dp</dimen>
+    <dimen name="log_record_minHeight">35dp</dimen>
+    <dimen name="log_record_marginVertical">4dp</dimen>
+</resources>

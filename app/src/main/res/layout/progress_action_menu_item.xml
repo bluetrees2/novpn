@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="?attr/actionBarSize"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/actionBarItemBackground"
+    android:indeterminate="true"
+    android:indeterminateBehavior="repeat"
+    android:indeterminateDuration="100"
+    android:padding="14dp"/>
